@@ -1,0 +1,41 @@
+Exercice 1:
+	Tableau de vérité Additionneur 1b:
+	a b cin s Cout
+	0 0 0   0  0
+	0 1 0   1  0
+	0 0 1   1  0
+	0 1 1   0  1
+	1 0 0   1  0
+	1 1 0   0  1
+	1 0 1   0  1
+	1 1 1   1  1
+
+	FND :
+		s = ( non (a).b. non(cin)) + (non(a).non(b).cin)+(a.non(b).non(cin))+(a.b.cin)	
+		  =  cin xor (a xor b)
+
+		Cout = (non(a).b.cin)+(a.b.non(cin))+(a.non(b).cin)+(a.b.cin)
+		     = cin(a xor b) + a.b
+
+Le chemin le plus long du circuit est le chemin de la retenue.
+
+Exercice 2:
+	Tableau de vérité Soustracteur 1b:
+	a b bin  d bout			 
+	0 0  0   0  0
+	0 0  1   1  1
+   	0 1  0   1  1
+    	0 1  1   1  1
+    	1 0  0   1  0
+    	1 0  1   0  0
+    	1 1  0   0  0
+    	1 1  1   1  1
+
+    FND :
+    	d = (non(a).non(d).bin)+ (non(a).b.non(bin)+(non(a).b.bin)+(a.non(b).non(bin))
+    	  = bin(non(a xor b) + non(a).b) + non(bin)(a xor b)
+
+    	bout = (non(a).non(b).bin)+(non(a).b.non(bin))+(non(a).b.bin)+(a.b.bin)
+    		 = bin(non(a xor b) + non(a).b) + non(bin)(non(a).b)  
+
+

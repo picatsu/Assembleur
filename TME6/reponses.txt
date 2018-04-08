@@ -1,0 +1,34 @@
+___________________________________________________________________________________
+Exercice 1
+
+Q1) on peut trouver les instruction et les directives dans la partie 'execute'
+
+Q2)	2.	non
+
+	3.	non
+
+	4.	le programme 'compile', on lit dans la console:
+		Assemble: assembling /users/nfs/Etu1/3670631/2i4/TME6/test.s
+		Assemble: operation completed successfully.
+
+	5.	On lit le code hexadecimal dans l'onglet 'execute' puis Text Segment, dans la partie Code.
+		ici, il vaut 0x224c0021
+		Cette instruction se trouve a l'adresse 0x00400000
+
+
+Q3)	1.	0b 0010 0010 0100 1100 0000 0000 0010 0001 
+		0b 0000 0010 0100 1100 0000 0000 0010 0001
+	
+	2.	000000 10010 01100 00000 00000 100001
+		addu $0 $18 $12
+		0x024c0021
+	
+	4.	$0 ne change pas
+
+Q4)	le programme s'assemble mais détecte les erreurs:
+	Assemble: operation completed with errors.
+___________________________________________________________________________________
+Exercice 2
+
+
+___________________________________________________________________________________
